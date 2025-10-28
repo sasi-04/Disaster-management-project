@@ -1,0 +1,28 @@
+{
+  "name": "iot-monitoring-dashboard",
+  "version": "1.0.0",
+  "description": "Professional IoT monitoring dashboard for Arduino Nano + ZigBee based landslide and flood detection system",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm run backend\" \"npm run frontend\"",
+    "backend": "cd backend && npm run dev",
+    "frontend": "cd frontend && npm run dev",
+    "build": "cd backend && npm run build && cd ../frontend && npm run build",
+    "install-all": "cd backend && npm install && cd ../frontend && npm install"
+  },
+  "keywords": [
+    "iot",
+    "dashboard",
+    "arduino",
+    "zigbee",
+    "monitoring",
+    "flood",
+    "landslide",
+    "sensors"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
